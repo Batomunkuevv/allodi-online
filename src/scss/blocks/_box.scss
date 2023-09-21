@@ -1,0 +1,129 @@
+.box {
+    padding-top: 29px;
+    padding-bottom: 44px;
+    background: url("../images/blocks/box/bg.png") center/cover no-repeat;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: calc(100% - 58px);
+        height: 172px;
+        background: url("../images/blocks/hero/bottom-glow.png") bottom/cover no-repeat;
+    }
+
+    &__body {
+        display: flex;
+        align-items: start;
+        gap: 78px;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__image {
+        width: 604px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        margin-top: 28px;
+        flex: 1 1 auto;
+        max-width: 46.5%;
+    }
+
+    &__title {
+        margin-bottom: 41px;
+        color: #416df4;
+        font-size: 30px;
+    }
+
+    &__table {
+        margin-bottom: 29px;
+    }
+
+    &__table-header {
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 11px;
+
+        &-cell {
+            padding: 4px 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(103, 29, 0, 0.48);
+            background: rgba(0, 0, 0, 0.55);
+            color: #671d00;
+            font-size: 12px;
+        }
+    }
+
+    &__table-list {
+    }
+
+    &__table-item {
+        padding: 5px 6px 4px;
+        border-radius: 1px;
+        border: 1px solid rgba(103, 29, 0, 0.48);
+        background: rgba(0, 0, 0, 0.55);
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 1px;
+        }
+    }
+
+    &__table-item-icon {
+        margin-right: 20px;
+        flex: none;
+    }
+
+    &__table-item-name {
+        line-height: 128%;
+        flex: 1 1 auto;
+    }
+
+    &__table-item-free {
+        flex: 0 0 146px;
+        text-align: center;
+        line-height: 128%;
+    }
+
+    &__table-item-subscribe {
+        flex: 0 0 146px;
+        text-align: center;
+        line-height: 128%;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: end;
+        gap: 31px;
+    }
+    
+    &__bottom-image {
+        margin-left: 4px;
+    }
+    
+    &__bottom-content {
+        padding-bottom: 37px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__price {
+        margin-bottom: 12px;
+        font-size: 50px;
+        line-height: toProcent(50, 59);
+    }
+
+    &__btn {
+    }
+}
